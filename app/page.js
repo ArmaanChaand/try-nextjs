@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import { ProjectBox } from './components/projectBox'
+import { NextLogo } from './components/nextLogo'
 
 export default function Home() {
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Following the NextJS course by&nbsp;
-          <a href='https://www.codewithharry.com/videos/nextjs-tutorial-in-hindi-1/' target='_blank'><code className="font-mono font-bold">codeWithHarry</code></a>
+          <a href='https://www.codewithharry.com/videos/nextjs-tutorial-in-hindi-1/' target='_blank'><code className="font-mono font-bold underline">codeWithHarry</code></a>
+          &nbsp; & &nbsp;
+          <a href='https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj' target='_blank'><code className="font-mono font-bold underline">Dave Gray</code></a>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
@@ -28,17 +32,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-      <div className="next-logo">
-        <Image
-          className="next-svg"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <NextLogo/>
 
       <p className="flex lg:max-w-5xl lg:w-full lg:mb-0 justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30
       ">
@@ -47,9 +41,9 @@ export default function Home() {
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <ProjectBox
-          name='Hunting Coder'
-          description="A hunting coder by a hunting coder."
-          url="/hunting-coder/"
+          name='Users'
+          description="Data fetching, Dynamic routes and metadata"
+          url="/users/"
         />
       </div>
     </main>

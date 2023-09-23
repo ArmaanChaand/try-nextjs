@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "*"
   ],
   theme: {
     extend: {
@@ -18,7 +19,7 @@ module.exports = {
     require("daisyui")
   ],
   daisyui: {
-    themes: ['wireframe', 'forest'], 
-    darkTheme: "forest",
-  },
+    themes: ['dracula'],
+    darkTheme: 'dracula'
+  }
 }
