@@ -42,7 +42,7 @@ export default function Home() {
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <ProjectBox
           name='Users'
-          description="Data fetching, Dynamic routes and metadata"
+          description="Server components, Data fetching, Dynamic routes and Metadata."
           url="/users/"
         />
       </div>

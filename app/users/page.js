@@ -3,7 +3,7 @@ import { UsersTable } from "./components/UsersTable";
 
 export const metadata = {
     title: "Users",
-    description: 'Data fetching, Dynamic routes and metadata'
+    description: 'Server components, Data fetching, Dynamic routes and Metadata.'
 }
 export default async function UsersHome(){
     const usersData = await getAllUsers()
